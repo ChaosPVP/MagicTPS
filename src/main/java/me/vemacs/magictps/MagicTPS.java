@@ -19,7 +19,7 @@ public class MagicTPS extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerCommandPreProcess(PlayerCommandPreprocessEvent event) {
         if (!event.getMessage().split(" ")[0].equalsIgnoreCase("/tps")) return;
-        if (!event.getPlayer().hasPermission("bukkit.command.tps")) return;
+        if (!event.getPlayer().hasPermission("magictps.fake")) return;
         event.setCancelled(true);
         double[] actualTps = TPSUtil.getRecentTps();
         StringBuilder sb = new StringBuilder(ChatColor.GOLD + "TPS from last 1m, 5m, 15m: ");
