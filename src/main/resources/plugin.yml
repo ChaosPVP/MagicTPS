@@ -1,0 +1,4 @@
+main: me.vemacs.magictps.MagicTPS
+name: MagicTPS
+version: ${project.version}
+description: Totally not placebo way to increase your server TPS, inspired by a particular generic factions server network
