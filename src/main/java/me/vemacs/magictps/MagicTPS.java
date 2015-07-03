@@ -7,13 +7,13 @@ import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class MagicTPS extends JavaPlugin implements Listener {
-    private int tpsMultiplier;
+    private double tpsMultiplier;
 
     @Override
     public void onEnable() {
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(this, this);
-        tpsMultiplier = getConfig().getInt("tps-multiplier");
+        tpsMultiplier = getConfig().getDouble("tps-multiplier");
     }
 
     @EventHandler

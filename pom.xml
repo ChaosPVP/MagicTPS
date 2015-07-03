@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.vemacs</groupId>
     <artifactId>MagicTPS</artifactId>
-    <version>6.9</version>
+    <version>6.9-R2</version>
     <name>MagicTPS</name>
     <repositories>
         <repository>
