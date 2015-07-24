@@ -8,9 +8,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class MagicTPS extends JavaPlugin implements Listener {
     private double tpsMultiplier;
+    private static MagicTPS instance;
 
     @Override
     public void onEnable() {
+        instance = this;
         saveDefaultConfig();
         getServer().getPluginManager().registerEvents(this, this);
         tpsMultiplier = getConfig().getDouble("tps-multiplier");
@@ -37,5 +39,9 @@ public class MagicTPS extends JavaPlugin implements Listener {
                 (magicTps > maxMagicTps - 4) ? ChatColor.YELLOW : ChatColor.RED).toString()
                 + ((magicTps > maxMagicTps) ? "*" : "")
                 + Math.min(Math.round(magicTps * 100.0) / 100.0, maxMagicTps);
+    }
+
+    public static MagicTPS getInstance() {
+        return instance;
     }
 }

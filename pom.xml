@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.vemacs</groupId>
     <artifactId>MagicTPS</artifactId>
-    <version>6.9-R2</version>
+    <version>6.9-R3</version>
     <name>MagicTPS</name>
     <repositories>
         <repository>
@@ -32,8 +32,8 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
+            <groupId>org.github.paperspigot</groupId>
+            <artifactId>paperspigot-api</artifactId>
             <version>1.8.7-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>compile</scope>
